@@ -40,7 +40,7 @@ def optimize_printing(print_jobs: List[Dict], constraints: Dict) -> Dict:
         else:
             total_time += current_max_time
             print_order.extend([j["id"] for j in current_batch])
-            
+
             current_batch = [job]
             current_volume = job["volume"]
             current_max_time = job["print_time"]
